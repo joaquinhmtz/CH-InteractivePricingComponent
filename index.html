@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./static/css/app.css">
+  <link rel="stylesheet" href="./static/css/medias-queries.css">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; padding: 10px; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="wrapper-primary">
+      <div class="title">
+        <div class="title-description">
+          <h1>Simple, traffic - based pricing</h1>
+          <span>Sign-up for our 30-day trial. No credit card required. </span>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper-secondary">
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <div class="card-price">
+          <div class="price-package">
+            <span id="package">100K Pageviews</span>
+          </div>
+          <div class="price-final">
+            <p>
+              <span id="final-price">$16.00</span>
+              <span> / month</span>
+            </p>
+          </div>
+          <div class="range">
+            <input id="slider-range" type="range" min="0" max="4" value="2" step="1">
+          </div>
+        </div>
+        <!-- <div class="price">
+          <span id="package">100K Pageviews</span>
+          <p>
+            <span id="final-price">$16.00</span>
+            <span> / month</span>
+          </p>
+        </div> -->
+        <!-- <div class="range">
+          <input id="slider-range" type="range" min="0" max="4" value="2" step="1">
+        </div> -->
+        <div class="opt-year">
+          <div class="option">
+            <span>Monthly Billing</span>
+            <label class="switch">
+              <input type="checkbox" id="switch-price">
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="discount">
+            <span>Yearly Billing</span>
+            <span>25% discount</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer">
+        <ul>
+          <li>Unlimited websites</li>
+          <li>100% data ownership</li>
+          <li>Email reports</li>
+        </ul>
+        <button class="btn btn-trial">Start my trial</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/joaquinhmtz/CH-InteractivePricingComponent">Joaquín Hernández</a>.
+  </div>
+
+  <script src="./static/js/app.js"></script>
+</body>
+</html>

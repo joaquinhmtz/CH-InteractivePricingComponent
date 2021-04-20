@@ -1,0 +1,66 @@
+@media (min-width: 200px) and (max-width: 992px) {
+    .card {
+        width: 90%;
+        height: auto;
+        top: 65%;
+    }
+
+    .card .card-footer {
+        flex-direction: column;
+    }
+
+    .card .card-footer ul {
+        text-align: center;
+        padding: 0px 0 30px 0;
+    }
+
+    .card .card-footer .btn {
+        height: 45px;
+        width: 50%;
+    }
+
+    .card .card-body .card-price .range {
+        padding: 2.3rem 0;
+    }
+
+    .card .card-body .opt-year {
+        padding: 15px 0 30px 0;
+    }
+
+    .card .card-body .card-price .price-package {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .card .card-body .card-price .price-final {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        padding-bottom: 1rem;
+    }
+
+    .card > .card-body .card-price .range {
+        order: 2;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .card {
+        width: 35%;
+        height: 50%;
+    }
+
+    .card .card-body .card-price .price-package {
+        width: 50%;
+    }
+
+    .card .card-body .card-price .price-final {
+        order: 2;
+        width: 50%;
+        justify-content: flex-end;
+    }
+
+    .card > .card-body .card-price .range {
+        order: 3;
+    }
+}
